@@ -36,10 +36,10 @@ ul{
     background-color: goldenrod;
 }
 #header{
-    background: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
+    background: url('../image/gradienta-OzfD79w8ptA-unsplash.jpg');
     background-repeat: no-repeat;
     color: white;
-    height: 600px;
+    height: 610px;
     display: flex;
 }
 button{

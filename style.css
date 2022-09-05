@@ -36,7 +36,7 @@ ul{
     background-color: goldenrod;
 }
 #header{
-    background: url('../image/gradienta-OzfD79w8ptA-unsplash.jpg');
+    background-image: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
     background-repeat: no-repeat;
     color: white;
     height: 610px;
@@ -87,7 +87,7 @@ height: 450px;
 @media only screen and (max-width: 768px) {
     .navbar-brand img{
         padding-left: 20px;
-        height: 60px;
+        height: 30px;
     }
     #header{
         display: flex;

@@ -36,7 +36,7 @@ ul{
     background-color: goldenrod;
 }
 #header{
-    background-image: url(/img/gradienta-OzfD79w8ptA-unsplash.jpg);
+    background-image: url(./image/gradienta-OzfD79w8ptA-unsplash.jpg);
     background-repeat: no-repeat;
     color: white;
 }
@@ -77,7 +77,7 @@ button:hover{
     padding-left: 100px;
    }
    #header{
-    background-image: url(/img/gradienta-OzfD79w8ptA-unsplash.jpg);
+    background-image: url(./image/gradienta-OzfD79w8ptA-unsplash.jpg);
     height: 600px;
     display: flex;
    }

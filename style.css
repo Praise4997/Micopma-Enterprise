@@ -19,7 +19,7 @@ ul{
     background-color: white;
 }
 .navbar-brand img{
-    max-height: 80px;
+    height: 80px;
     width: fit-content;
 }
 #success{
@@ -36,7 +36,7 @@ ul{
     background-color: goldenrod;
 }
 #header{
-    background-image: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
+    background: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
     background-repeat: no-repeat;
     color: white;
     height: 600px;
@@ -87,7 +87,7 @@ height: 450px;
 @media only screen and (max-width: 768px) {
     .navbar-brand img{
         padding-left: 20px;
-        max-height: 60px;
+        height: 60px;
     }
     #header{
         display: flex;

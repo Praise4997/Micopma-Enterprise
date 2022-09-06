@@ -2,6 +2,11 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.bd {
+    background-color: #BBC4EB;
 }
 .nav-link{
     line-height: 8vh;
@@ -47,25 +52,13 @@ ul{
     height: 610px;
     display: flex;
 }
-button{
-    background-color: transparent;
-    padding: 1em;
-    font-size: 15px;
-    border-radius: 5px;
-    color: white;
-    border: 1px solid white;
-}
-button:hover{
-    background-color: white;
-    color: #140b41;
-}
 .left-side h1{
     line-height: 2.5em;
 }
 .left-side p{
     line-height: 2em;
     font-size: 1.1em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 form{
     padding-right: 100px;
@@ -89,6 +82,244 @@ padding-top: 120px;
 height: 450px;
 }
 
+/* About us */
+.about-section{
+    width: 100%;
+    min-height: 85vh;
+    background-color: #BBC4EB;
+}
+
+.top-about{
+    background-image: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
+    background-color: #140b41;
+    color: #BBC4EB; 
+    height: 10vh;
+}
+
+.top-about h3{
+    text-align: left;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+hr{
+    background-color: #140b41;
+    height: 5px;
+    width: 100%;
+}
+.about-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+}
+
+.image-section img:hover{
+    transform: scale(1.08);
+}
+
+.content-section .title h1{
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.content-section .title h3{
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    opacity: .9;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+
+.content-section .content .button a{
+    background-color: #140b41;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #BBC4EB;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover{
+    background-color: transparent;
+    border: 1px solid #140b41;
+    color: #140b41;
+}
+/* Team section */
+.team-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #BBC4EB;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container h1{
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    position: absolute;
+    top: -70px;
+    text-align: center;
+}
+
+.container h1::after,
+.container h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    left: 0;
+}
+
+.container h1::after{
+    top: -2px;
+}
+
+.container h1::before{
+    bottom: -2px;
+}
+.img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-wrapper .img-card{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    margin: 0 20px;
+    box-shadow: 7px 7px 42px rgba(51, 51, 51, 0.422);
+}
+
+.img-wrapper .img-card:nth-child(odd){
+    transform: translateY(-10px);
+}
+
+.img-wrapper .img-card:nth-child(even){
+    transform: translateY(30px);
+}
+
+.img-card .img{
+    height: 360px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.img-card:hover .img img{
+    filter: grayscale(1);
+    transform: scale(1.08);
+}
+.img-card .img img{
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    filter: grayscale(0);
+    transition: all .8s ease;  
+}
+
+.img-card .text{
+    line-height: 25px;
+    padding: 5px 0 10px 10px;
+}
+
+.img-card .text h2{
+    font-size: 19px;
+}
+
+.img-card .text p{
+    font-size: 15px;
+    font-weight: 500;
+    opacity: .9;
+}
+
+/* footer */
+.footer{
+    background-image: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
+    background-color: #140b41;
+    color: #BBC4EB; 
+    text-align: center;
+    justify-content: center;
+}
+
+.footer h1{
+    font-size: 1.5em;
+    padding-top: 40px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.footer p{
+    font-size: 1.2em;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.footer button {
+    background-color: transparent;
+    border: 1px solid #BBC4EB;
+    color: #BBC4EB;
+    padding: 15px 40px;
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.footer button:hover{
+    padding-left: 50px;
+}
+
+.footer .dark-footer{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.footer .dark-footer h3{
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    opacity: .9;
+    line-height: 1.5;
+}
 @media only screen and (max-width: 768px) {
     .navbar-brand img{
         height: 60px;
@@ -121,5 +352,80 @@ height: 450px;
         height: 200px;
         padding-top: 20px;
         padding-bottom: 2em;
-    } 
+    }
+    /* About section */
+    .about-container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .image-section{
+        float: none;
+        width: 100%;
+    }
+
+    .image-section img{
+       padding-left: 0px;
+       padding-top: 50px;
+       padding-bottom: 80px;
+       width: 100%;
+       height: auto;
+       display: block;
+       margin: auto;
+    }
+
+    .content-section .title{
+        text-align: center;
+    }
+
+    .content-section .title h1{
+        line-height: 2;
+        font-size: 32px;
+    }
+
+    .content-section .title h3{
+        line-height: 2;
+        font-size: 19px;
+    }
+
+    .content-section .content .button{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+    
+    /* Team media query */
+    .img-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .team-section{
+        height: 220vh;
+    }
+    .img-wrapper .img-card:nth-child(even){
+        transform: translateY(-10px);
+    }
+    .img-wrapper .img-card:nth-child(odd){
+        transform: translateY(-10px);
+    }
+    .img-wrapper .img-card{
+        margin: 20px 20px;
+    }
+    .container h1{
+        top: -60px;
+    }
+    hr{
+        margin-bottom: 40px;
+    }
 }

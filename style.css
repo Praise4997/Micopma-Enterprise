@@ -88,13 +88,14 @@ height: 450px;
 
 @media only screen and (max-width: 768px) {
     .navbar-brand img{
-        padding-left: 20px;
         height: 30px;
         width: 50%;
+        padding-left: 0.5em;
     }
     #header{
         background-image: url(../image/gradienta-OzfD79w8ptA-unsplash.jpg);
         background-color: #140b41;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -103,8 +104,15 @@ height: 450px;
         padding: 20px;
         width: 100%;
     }
+    .left-side h1{
+        line-height: 0.5rem;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.7em;
+    }
     .right-side img {
         height: 200px;
         padding-top: 10px;
+        padding-bottom: 2em;
     } 
 }

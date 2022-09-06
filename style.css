@@ -101,7 +101,8 @@ height: 450px;
         width: 100%;
     } 
     .left-side{
-        padding: 20px;
+        text-align: center;
+        padding: 10px;
         width: 100%;
     }
     .left-side h1{
@@ -109,6 +110,10 @@ height: 450px;
         padding-top: 1em;
         padding-bottom: 1em;
         font-size: 1.7em;
+    }
+    .left-side p{
+        font-size: 1.2em;
+        width: 100%;
     }
     .right-side img {
         height: 200px;

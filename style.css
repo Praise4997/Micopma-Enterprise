@@ -435,7 +435,7 @@ hr{
     box-shadow: 7px 7px 22px rgba(51, 51, 51, 0.422);
     transition: all 0.8s ease;
     justify-content: space-between;
-    margin: 2em;
+    margin: 1.5em;
     margin-top: -2em;
 }
 
@@ -655,6 +655,14 @@ hr{
     }
     .choice-one{
         margin-bottom: 20px;
+        margin: 5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+    .choice-one img{
+        padding-left: 0px;
     }
     /* service section */
     .service-section h1{
@@ -664,7 +672,13 @@ hr{
 
     .service{
         width: 100%;
+        padding: 0 20px;
     }
+
+    .service h2{
+        width: 100%;
+    }
+
     .service-images{
         display: flex;
         flex-direction: column;

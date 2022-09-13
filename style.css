@@ -306,6 +306,7 @@ hr{
     color: #BBC4EB; 
     text-align: center;
     justify-content: center;
+    margin-bottom: 0px;
 }
 
 .footer h1{
@@ -338,11 +339,13 @@ hr{
 
 .footer .dark-footer{
     background-color: rgb(17, 17, 17);
+    margin-bottom: 0px;
     color: white;
 }
 
 .footer .dark-footer h3{
     font-size: 1em;
+    font-style: italic;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 500;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Our Services</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
           </li>
     </section>
     <section class="service-section">
-        <h1>Our Services</h1>
+        <h1 class="main-title">Our Services</h1>
         <div class="service">
             <h2>Data, Meter and Cable Subscriptions  - 
             <span class="para">
@@ -43,16 +44,16 @@
         </div>
     </section>
     <div class="service-images">
-        <div class="data">
+        <div class="data tagline">
             <img src="./image/IMG-20220907-WA0031.jpg" alt="" srcset="">
             <h1>Data, Meter and Cable Subcription</h1>
         </div>
-       <div class="data">
+       <div class="data tagline">
         <img src="./image/POS.jpg" alt="">
         <h1>POS Machine</h1>
        </div>
-       <div class="data">
-        <img src="./image/many-laptop-computers-blank-black-screens-38429841.jpg" alt="">
+       <div class="data tagline">
+        <img src="./image/IMG-20220909-WA0025.jpg" alt="">
         <h1>Laptops and other gadgets</h1>
        </div>
     </div>
@@ -66,5 +67,18 @@
             <h3>Micopma Enterprise | Designed by Girlintech</h3>
         </div>
     </section>
+    
+     <!-- revealjs -->
+  <script>
+    ScrollReveal({ 
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.tagline', { delay: 500, origin: 'top' });
+    ScrollReveal().reveal('.main-title', { delay: 300, origin: 'left' });
+  </script>
 </body>
 </html>

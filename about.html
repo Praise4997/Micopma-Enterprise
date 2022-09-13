@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bd">
@@ -18,8 +19,8 @@
         <div class="about-container">
             <div class="content-section">
                 <div class="title">
-                    <h1>About Us</h1>
-                    <h3>Our Customer, Our Priority.</h3>
+                    <h1 class="main-title">About Us</h1>
+                    <h3 class="sub-title">Our Customer, Our Priority.</h3>
                 </div>
                 <div class="content">
                     <p>Micopma Enterprise deals with Data Subscription, Metre Subscription
@@ -50,7 +51,7 @@
         <div class="container">
             <h1>Our Team</h1>
             <div class="img-wrapper">
-                <div class="img-card">
+                <div class="img-card tagline">
                     <div class="img">
                         <img src="./image/Screenshot_20220909-080652.jpg" alt="">
                     </div>
@@ -59,7 +60,7 @@
                         <p>CEO</p>
                     </div>
                 </div>
-                <div class="img-card">
+                <div class="img-card tagline">
                     <div class="img">
                         <img src="./image/IMG_7112 (2).jpeg" alt="">
                     </div>
@@ -68,12 +69,12 @@
                         <p>Programmer</p>
                     </div>
                 </div>
-                <div class="img-card">
+                <div class="img-card tagline">
                     <div class="img">
                         <img src="./image/20220909_115224.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h2>Micheal Olubunmi</h2>
+                        <h2>Blessing Agunloye</h2>
                         <p>Content Writer</p>
                     </div>
                 </div>
@@ -90,5 +91,19 @@
     <div class="dark-footer">
         <h3>Micopma Enterprise | Designed by Girlintech</h3>
     </div>
+     <!-- revealjs -->
+  <script>
+    ScrollReveal({ 
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.tagline', { delay: 500, origin: 'bottom' });
+    ScrollReveal().reveal('.main-title', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.sub-title', { delay: 300, origin: 'right' });
+  </script>
+
 </section>
 </html>

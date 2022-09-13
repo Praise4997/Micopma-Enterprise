@@ -11,6 +11,7 @@
     display: block;
     margin-bottom: 3em;
     width: 80%;
+    margin-top: 2em;
 }
 
 .bd {
@@ -715,6 +716,9 @@ hr{
         margin-bottom: 40px;
         width: 100%;
     }
+    form{
+        padding-right: 0px;
+    }
 }
 
 
@@ -843,6 +847,7 @@ hr{
     }
     .choice-one{
         margin-bottom: 20px;
+        padding-bottom: 1em;
         margin: 5px;
         text-align: center;
         justify-content: center;
@@ -875,6 +880,7 @@ hr{
     }
     .service-images img{
         width: 100%;
+        height: auto;
     }
     .data{
         width: 90%;
@@ -893,5 +899,6 @@ hr{
     /*  */
     #video video{
         width: 300;
+        margin-top: 1em;
     }
 }

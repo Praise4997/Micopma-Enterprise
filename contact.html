@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="contact">
         <div class="content-contact">
-            <h2>Contact Us</h2>
-            <p>
+            <h2 class="main-title">Contact Us</h2>
+            <p class="sub-title">
                 Send us a message today or follow our social media accounts
                 to stay tuned for more offers.
             </p>
@@ -48,11 +49,11 @@
                 </div>
                 <div class="box">
                     <div class="social-icon">
-                        <a href="https://wa.me/message/ASR5D36XMXVJH1"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/invites/contact/?i=hphg20mvbi81&utm_content=43fsj2c"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/michealpelumi.olubunmi"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/message/ASR5D36XMXVJH1"><i class="fa-brands fa-whatsapp tagline"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=hphg20mvbi81&utm_content=43fsj2c"><i class="fa-brands fa-instagram tagline"></i></a>
+                        <a href="https://www.facebook.com/michealpelumi.olubunmi"><i class="fa-brands fa-facebook tagline"></i></a>
                         <br>
-                        <h3>Social media</h3>
+                        <h3 class="sub-title">Social media</h3>
                     </div>
                 </div>
             </div>
@@ -78,5 +79,18 @@
             </div>
         </div>
     </section>
+     <!-- revealjs -->
+  <script>
+    ScrollReveal({ 
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.tagline', { delay: 500, origin: 'top' });
+    ScrollReveal().reveal('.main-title', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.sub-title', { delay: 300, origin: 'right' });
+  </script>
 </body>
 </html>

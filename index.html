@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micopma</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -42,8 +43,8 @@
       <div class="line"></div>
       <section id="header">
         <div class="left-side">
-          <h1>Micopma Enterprise</h1>
-          <p>At Micopma Enterprise, We deal with Data subscription, Meter subscription,
+          <h1 class="main-title">Micopma Enterprise</h1>
+          <p class="sub-title">At Micopma Enterprise, We deal with Data subscription, Meter subscription,
             Cable subscription , Sales of POS Machine , Power Banks, Laptops and other electronics gadgets.
           </p>
           <a href="./about.html">
@@ -55,17 +56,17 @@
         </div>
       </section>
       <section id="choice-section">
-        <h1>Why Choose Us?</h1>
+        <h1 class="main-title">Why Choose Us?</h1>
         <div class="choice">
-          <div class="choice-one">
+          <div class="choice-one tagline" >
             <i class="fa-regular fa-circle-check"></i>
-            <h2>AVAILABILITY</h2>
+            <h2>EFFICIENCY</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Temporibus, quasi ullam obcaecati provident, quaerat omnis 
               natus quia nostrum corporis nihil 
               ipsum rerum aut odit. Sit, quasi? Mollitia eveniet temporibus fuga.</p>
           </div>
-          <div class="choice-one">
+          <div class="choice-one tagline">
             <i class="fa-solid fa-user-check"></i>
             <h2>INSTANT DELIVERY</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -73,7 +74,7 @@
               natus quia nostrum corporis nihil 
               ipsum rerum aut odit. Sit, quasi? Mollitia eveniet temporibus fuga.</p>
           </div>
-          <div class="choice-one">
+          <div class="choice-one tagline">
             <i class="fa-solid fa-user-shield"></i>
             <h2>TRUST & SECURITY</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -83,23 +84,23 @@
           </div>
         </div>
       </section>
-      <h1 class="hh">Our Services</h1>
+      <h1 class="hh main-title">Our Services</h1>
       <div class="service-images">
-        <div class="data">
+        <div class="data tagline">
             <img src="./image/IMG-20220907-WA0031.jpg" alt="" srcset="">
             <h1>Data, Meter and Cable Subcription</h1>
         </div>
-       <div class="data">
+       <div class="data tagline">
         <img src="./image/POS.jpg" alt="">
         <h1>POS Machine</h1>
        </div>
-       <div class="data">
-        <img src="./image/many-laptop-computers-blank-black-screens-38429841.jpg" alt="">
+       <div class="data tagline">
+        <img src="./image/IMG-20220909-WA0025.jpg" alt="">
         <h1>Laptops and other gadgets</h1>
        </div>
     </div>
     <!-- testimonials section -->
-    <h1 class="hh">What Our Customers say</h1>
+    <h1 class="hh main-title">What Our Customers say</h1>
     <section id="testimonials">
       <div class="swiper mySwiper T-container">
         <div class="swiper-wrapper T-content">
@@ -190,6 +191,20 @@
           <h3>Micopma Enterprise | Designed by Girlintech</h3>
       </div>
   </section>
+
+  <!-- revealjs -->
+  <script>
+    ScrollReveal({ 
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.tagline', { delay: 500, origin: 'top' });
+    ScrollReveal().reveal('.main-title', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.sub-title', { delay: 300, origin: 'right' });
+  </script>
 
 
 
